@@ -1,4 +1,5 @@
 {
+  "hostname": "sonoff-1",
   "wifi_ssid": "-",
   "wifi_password": "-",
   "mqtt_prefix": "/sonoff",

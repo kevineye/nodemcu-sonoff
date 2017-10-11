@@ -32,6 +32,7 @@ end
 function connect_to_wifi(cb)
     print("Connecting to WiFi access point...")
     wifi.setmode(wifi.STATION)
+    wifi.sta.sethostname(config.hostname)
     wifi.sta.config(config.wifi_ssid, config.wifi_password)
     tmr.alarm(TIMER_WIFI, 1000, tmr.ALARM_AUTO, function()
         if wifi.sta.getip() == nil then
